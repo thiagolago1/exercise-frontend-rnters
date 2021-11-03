@@ -1,0 +1,174 @@
+.divContainer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto 40px;
+  padding-top: 80px;
+  padding-bottom: 40px;
+
+  h1 {
+    font-size: 3.75rem;
+    font-weight: 700;
+  }
+
+  h2 {
+    margin-top: 16px;
+    font-size: 1.5rem;
+    font-weight: 300;
+  }
+}
+
+.divSearchBar {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 88px;
+  margin-top: 16px;
+  padding: 16px;
+  background-color: var(--white);
+  border: 1px solid var(--grayMedium);
+  border-radius: 4px;
+}
+
+.divSearchBarResult {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  margin-top: 225px;
+  padding: 16px;
+  background-color: var(--white);
+  border: 1px solid var(--grayMedium);
+  border-radius: 4px;
+  z-index: 9;
+}
+
+.spanSearch {
+  margin-right: 24px;
+}
+
+.inputSearch {
+  width: 100%;
+  border: 0;
+  outline: 0;
+  font-size: 1.5rem;
+  color: var(--grayDark);
+}
+
+.buttonFilter {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 16px;
+  margin-right: 16px;
+  background-color: var(--white);
+  border-radius: 4px;
+  color: var(--green);
+  text-transform: uppercase;
+  font-size: .85rem;
+  font-weight: 700;
+  height: 48px;
+  border: 1px solid transparent;
+
+  &:hover {
+    cursor: pointer;
+    background-color: #f9f9f9;
+  }
+}
+
+.buttonSearch {
+  margin-right: 0;
+  background-color: var(--green);
+  color: var(--white);
+  height: 48px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  text-transform: uppercase;
+  font-size: .85rem;
+  font-weight: 700;
+  width: 10%;
+}
+
+.inputCountry {
+  position: relative;
+  width: 100%;
+  height: 32px;
+  font-size: 0.85rem;
+  font-weight: 300;
+  border-width: 0px;
+  outline: 0px;
+}
+
+.listContainer {
+  margin-left: 20px;
+  list-style-type: none;
+  font-size: 1rem;
+  color: rgb(53, 53, 53);
+  cursor: pointer;
+
+  li {
+    margin-top: 8px;
+    &:hover {
+      color: var(--grayLight);
+    }
+  }
+}
+
+.filtersContainer {
+  margin-top: 18px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  position: relative;
+
+  .filterCountry, .filterDateFrom, .filterDateTo {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 50px;
+    font-size: 1.5rem;
+    color: rgb(53, 53, 53);
+    background-color: var(--white);
+    margin-bottom: 16px;
+    outline: 0px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(169, 169, 169);
+    border-image: initial;
+    border-radius: 4px;
+    padding: 8px 16px;
+  }
+}
+
+.filterCountry {
+  width: 50%;
+}
+
+.filterDateFrom {
+  width: 25%;
+  margin-left: 16px;
+}
+
+.filterDateTo {
+  width: 25%;
+  margin-left: 16px;
+}
+
+.clearButton {
+  border: none;
+  padding: 14px;
+  width: 60px;
+  background-color: white;
+
+  &:hover {
+    background-color: #f9f9f9;
+  }
+}
